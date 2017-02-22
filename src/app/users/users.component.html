@@ -1,0 +1,36 @@
+<some-app-toolbar></some-app-toolbar>
+<ul>
+  <li *ngFor="let user of users">
+    {{user.name}}
+  </li>
+</ul>
+
+
+  <md-list *ngFor="let user of users">
+    <md-list-item>
+      <md-card>
+      {{user.name}}
+      </md-card>
+    </md-list-item>
+  </md-list>
+
+<md-input-container>
+  <input mdInput placeholder="hey"
+  [(ngModel)]="username">
+</md-input-container>
+<br>
+
+<fa [name]="iconName" [size]="iconSize"></fa>
+
+<div>
+  <md-input-container>
+    <input mdInput [(ngModel)]="iconName">
+  </md-input-container>
+</div>
+<div>
+  <md-input-container>
+    <input mdInput [(ngModel)]="iconSize">
+  </md-input-container>
+</div>
+
+
